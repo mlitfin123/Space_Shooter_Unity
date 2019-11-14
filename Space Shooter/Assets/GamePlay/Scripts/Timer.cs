@@ -7,7 +7,6 @@ public class Timer : MonoBehaviour
 {
     float currentTime = 0f;
     float startingTime = 0f;
-    public GameObject boss;
 
     [SerializeField] Text TimerText;
     // Start is called before the first frame update
