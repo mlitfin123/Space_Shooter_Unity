@@ -462,9 +462,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6009366284201137178, guid: 142fba171c55eeb45aeb15a72d8976b0,
         type: 3}
-      propertyPath: timer
-      value: 2.75
+      propertyPath: enemy_Prefabs.Array.size
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6009366284201137178, guid: 142fba171c55eeb45aeb15a72d8976b0,
+        type: 3}
+      propertyPath: timer
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009366284201137178, guid: 142fba171c55eeb45aeb15a72d8976b0,
+        type: 3}
+      propertyPath: enemy_Prefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 8088876582878417559, guid: da6c549e7f48a68499f016fecf52b97c,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 142fba171c55eeb45aeb15a72d8976b0, type: 3}
 --- !u!1 &584693277

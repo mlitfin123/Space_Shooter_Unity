@@ -48,9 +48,14 @@ MonoBehaviour:
   asteroid_Prefabs:
   - {fileID: 6747026704579016348, guid: ae4d463454dcd3f4f8546cef1366ff03, type: 3}
   - {fileID: 7979792204202706108, guid: a4f6c7d73f99033429f262bcba1bdeb8, type: 3}
+  - {fileID: 7979792204202706108, guid: a4f6c7d73f99033429f262bcba1bdeb8, type: 3}
+  - {fileID: 7979792204202706108, guid: a4f6c7d73f99033429f262bcba1bdeb8, type: 3}
   enemy_Prefabs:
   - {fileID: 3892788192189446946, guid: 087c2df75ebfd864195fa0624e925e4d, type: 3}
+  - {fileID: 8088876582878417559, guid: da6c549e7f48a68499f016fecf52b97c, type: 3}
+  - {fileID: 6513372758858123799, guid: aee15229aded7ce4bb9e4a945a79f3b2, type: 3}
+  - {fileID: 4124157545226346320, guid: 6e0ff1ccf6028b540b15bce118516445, type: 3}
   boss: {fileID: 7898333569543580323, guid: e2754d51a7b7bb74c954562d6b57a303, type: 3}
   timer: 3
-  bosstimer: 30
+  bosstimer: 45
   bossnumber: 0
