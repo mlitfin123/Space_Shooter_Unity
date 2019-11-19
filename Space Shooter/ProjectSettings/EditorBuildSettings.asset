@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GamePlay/Levels/Level 20.unity
     guid: d4db148f800a290448972303c2966ef4
+  - enabled: 0
+    path: Assets/GamePlay/Levels/High Scores.unity
+    guid: 5cf72221feb54cf47a77659ab26f0043
   m_configObjects: {}

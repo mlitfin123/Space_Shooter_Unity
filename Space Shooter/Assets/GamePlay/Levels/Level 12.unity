@@ -233,19 +233,25 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 6e668a87add7d4e4290f462ae5c6eac9, type: 3}
 --- !u!1 &4991853 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7661781898466529489, guid: 6e668a87add7d4e4290f462ae5c6eac9,
+  m_CorrespondingSourceObject: {fileID: 1442033276, guid: 6e668a87add7d4e4290f462ae5c6eac9,
     type: 3}
   m_PrefabInstance: {fileID: 4991852}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &4991854 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7661781896677977504, guid: 6e668a87add7d4e4290f462ae5c6eac9,
+  m_CorrespondingSourceObject: {fileID: 1880890893, guid: 6e668a87add7d4e4290f462ae5c6eac9,
     type: 3}
   m_PrefabInstance: {fileID: 4991852}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &4991855 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7661781897367191336, guid: 6e668a87add7d4e4290f462ae5c6eac9,
+  m_CorrespondingSourceObject: {fileID: 1497386599, guid: 6e668a87add7d4e4290f462ae5c6eac9,
+    type: 3}
+  m_PrefabInstance: {fileID: 4991852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4991856 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 872861069, guid: 6e668a87add7d4e4290f462ae5c6eac9,
     type: 3}
   m_PrefabInstance: {fileID: 4991852}
   m_PrefabAsset: {fileID: 0}
@@ -472,6 +478,12 @@ PrefabInstance:
       propertyPath: timer
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 6009366284201137178, guid: 142fba171c55eeb45aeb15a72d8976b0,
+        type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 2909348777500404129, guid: 615b2f2fc0d3e894c9759a91447591f7,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 142fba171c55eeb45aeb15a72d8976b0, type: 3}
 --- !u!1001 &581218830
@@ -748,6 +760,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4686354659452119689, guid: b8d07c5f16e9a2c42b9a8ad93f8f48b8,
+        type: 3}
+      propertyPath: level
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8d07c5f16e9a2c42b9a8ad93f8f48b8, type: 3}
 --- !u!1001 &967150967
@@ -959,15 +976,20 @@ PrefabInstance:
         type: 3}
       propertyPath: completeLevelText
       value: 
-      objectReference: {fileID: 4991854}
+      objectReference: {fileID: 4991855}
     - target: {fileID: 3027789147494755654, guid: 9748b9ebfef6df543a88ec9be3c4d466,
         type: 3}
       propertyPath: restartLevelText
       value: 
-      objectReference: {fileID: 4991855}
+      objectReference: {fileID: 4991856}
     - target: {fileID: 3027789147494755654, guid: 9748b9ebfef6df543a88ec9be3c4d466,
         type: 3}
       propertyPath: endGameText
+      value: 
+      objectReference: {fileID: 4991854}
+    - target: {fileID: 3027789147494755654, guid: 9748b9ebfef6df543a88ec9be3c4d466,
+        type: 3}
+      propertyPath: highLevelText
       value: 
       objectReference: {fileID: 4991853}
     m_RemovedComponents: []

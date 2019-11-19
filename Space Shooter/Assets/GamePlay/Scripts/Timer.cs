@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     float startingTime = 0f;
 
     [SerializeField] Text TimerText;
-    // Start is called before the first frame update
+    // Start the timer 
     void Start()
     {
         currentTime = startingTime;

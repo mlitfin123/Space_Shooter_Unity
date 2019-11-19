@@ -46,6 +46,8 @@ MonoBehaviour:
   restartDelay: 3
   endGameDelay: 3
   completeLevelDelay: 3
+  highScore: {fileID: 0}
   restartLevelText: {fileID: 0}
   completeLevelText: {fileID: 0}
   endGameText: {fileID: 0}
+  highLevelText: {fileID: 0}

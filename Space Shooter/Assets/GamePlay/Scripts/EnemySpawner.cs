@@ -51,7 +51,7 @@ public class EnemySpawner : MonoBehaviour
         //temporary position of spawner
         Vector3 temp = transform.position;
         temp.y = pos_Y;
-        if (bossnumber == 0)
+        if (bossnumber == 0) //spawns the boss if there is not already a boss present
         {
             Instantiate(boss, temp, Quaternion.Euler(0f, 0f, 90f));
             Invoke("SpawnBoss", bosstimer);
