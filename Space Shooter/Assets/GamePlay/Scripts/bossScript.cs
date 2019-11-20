@@ -17,6 +17,14 @@ public class bossScript : MonoBehaviour
     public bool canShoot;
     private bool canMove = true;
 
+    private Animator anim;
+    private AudioSource explosionSound;
+    void Awake()
+    {
+        anim = GetComponent<Animator>();
+        explosionSound = GetComponent<AudioSource>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,14 +78,19 @@ public class bossScript : MonoBehaviour
         if (target.tag == "Bullet" || target.tag == "Enemy")
             life -= 1;
         if (life <= 0)
+        {
             //add score
             ScoreScript.Score += 50;
             canMove = false;
             canShoot = false;
             CancelInvoke("StartShooting");
-        //destroy boss
+            //destroy boss
             Invoke("TurnOffGameObject", .3f);
+            explosionSound.Play();
+            anim.Play("Death1");
+            anim.Play("Death");
             FindObjectOfType<EnemySpawner>().bossnumber -= 1;
             FindObjectOfType<GameManager>().CompleteLevel();
+        }
     }
 }

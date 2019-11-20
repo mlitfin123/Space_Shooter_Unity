@@ -38,7 +38,8 @@ public class GameManager : MonoBehaviour
         highScore7.text = PlayerPrefs.GetInt("High Score7", 0).ToString();
         highScore8.text = PlayerPrefs.GetInt("High Score8", 0).ToString();
         highScore9.text = PlayerPrefs.GetInt("High Score9", 0).ToString();
-        highScore10.text = PlayerPrefs.GetInt("High Score10", 0).ToString();
+        highScore10
+            .text = PlayerPrefs.GetInt("High Score10", 0).ToString();
     }
     public void CompleteLevel()
     {
@@ -77,7 +78,7 @@ public class GameManager : MonoBehaviour
         if (ScoreScript.Score > PlayerPrefs.GetInt("High Score", 0))  //create a high score for the player
         {
             PlayerPrefs.SetInt("High Score", ScoreScript.Score);
-            highScore.text = ScoreScript.Score.ToString();
+            highScore.text = "New High Score!"; ScoreScript.Score.ToString();
         }
         else if (ScoreScript.Score > PlayerPrefs.GetInt("High Score2", 0)) 
         {
