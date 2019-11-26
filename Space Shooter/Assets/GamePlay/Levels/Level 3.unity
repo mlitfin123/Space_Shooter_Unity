@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 3027789147494755655, guid: 9748b9ebfef6df543a88ec9be3c4d466,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3027789147494755655, guid: 9748b9ebfef6df543a88ec9be3c4d466,
         type: 3}
@@ -443,13 +443,19 @@ PrefabInstance:
         type: 3}
       propertyPath: asteroid_Prefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 7979792204202706108, guid: a4f6c7d73f99033429f262bcba1bdeb8,
+      objectReference: {fileID: 6542101368399430838, guid: 5c3659959ebb30a489d7eef3009f8afc,
         type: 3}
     - target: {fileID: 6009366284201137178, guid: 142fba171c55eeb45aeb15a72d8976b0,
         type: 3}
       propertyPath: boss
       value: 
-      objectReference: {fileID: 3471739546930103736, guid: 28859c4fc6c467545abdf5e15c7603ed,
+      objectReference: {fileID: 2467365585251046771, guid: 28859c4fc6c467545abdf5e15c7603ed,
+        type: 3}
+    - target: {fileID: 6009366284201137178, guid: 142fba171c55eeb45aeb15a72d8976b0,
+        type: 3}
+      propertyPath: asteroid_Prefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 3592861495988656133, guid: a605a9cb8e6a23444baef3434392fdb5,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 142fba171c55eeb45aeb15a72d8976b0, type: 3}
@@ -886,7 +892,7 @@ PrefabInstance:
     - target: {fileID: 8294996139216282356, guid: 8b805db0d8425b044b657e0daab1171f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8294996139216282356, guid: 8b805db0d8425b044b657e0daab1171f,
         type: 3}

@@ -571,13 +571,13 @@ PrefabInstance:
         type: 3}
       propertyPath: asteroid_Prefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 7979792204202706108, guid: a4f6c7d73f99033429f262bcba1bdeb8,
+      objectReference: {fileID: 3592861495988656133, guid: a605a9cb8e6a23444baef3434392fdb5,
         type: 3}
     - target: {fileID: 6009366284201137178, guid: 142fba171c55eeb45aeb15a72d8976b0,
         type: 3}
       propertyPath: asteroid_Prefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 7979792204202706108, guid: a4f6c7d73f99033429f262bcba1bdeb8,
+      objectReference: {fileID: 2566573489091710768, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3,
         type: 3}
     - target: {fileID: 6009366284201137178, guid: 142fba171c55eeb45aeb15a72d8976b0,
         type: 3}
@@ -740,12 +740,12 @@ PrefabInstance:
     - target: {fileID: 4735271028767982791, guid: debc9e7a2a487b04cbd65807832bc709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.116623
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4735271028767982791, guid: debc9e7a2a487b04cbd65807832bc709,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.1804695
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4735271028767982791, guid: debc9e7a2a487b04cbd65807832bc709,
         type: 3}

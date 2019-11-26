@@ -14,14 +14,6 @@ public class GameManager : MonoBehaviour
 
     public Text highScore;
     public Text highScore2;
-    public Text highScore3;
-    public Text highScore4;
-    public Text highScore5;
-    public Text highScore6;
-    public Text highScore7;
-    public Text highScore8;
-    public Text highScore9;
-    public Text highScore10;
 
     public GameObject restartLevelText;
     public GameObject completeLevelText;
@@ -31,21 +23,14 @@ public class GameManager : MonoBehaviour
     {
         highScore.text = PlayerPrefs.GetInt("High Score", 0).ToString();
         highScore2.text = PlayerPrefs.GetInt("High Score2", 0).ToString();
-        highScore3.text = PlayerPrefs.GetInt("High Score3", 0).ToString();
-        highScore4.text = PlayerPrefs.GetInt("High Score4", 0).ToString();
-        highScore5.text = PlayerPrefs.GetInt("High Score5", 0).ToString();
-        highScore6.text = PlayerPrefs.GetInt("High Score6", 0).ToString();
-        highScore7.text = PlayerPrefs.GetInt("High Score7", 0).ToString();
-        highScore8.text = PlayerPrefs.GetInt("High Score8", 0).ToString();
-        highScore9.text = PlayerPrefs.GetInt("High Score9", 0).ToString();
-        highScore10
-            .text = PlayerPrefs.GetInt("High Score10", 0).ToString();
+
     }
     public void CompleteLevel()
     {
         completeLevel = true;
         completeLevelText.SetActive(true); //displays the complete level text
         Invoke("Complete", completeLevelDelay); //starts the Complete function
+        CancelInvoke("SpawnEnemies");
     }
     void Complete()
     {
@@ -78,52 +63,12 @@ public class GameManager : MonoBehaviour
         if (ScoreScript.Score > PlayerPrefs.GetInt("High Score", 0))  //create a high score for the player
         {
             PlayerPrefs.SetInt("High Score", ScoreScript.Score);
-            highScore.text = "New High Score!"; ScoreScript.Score.ToString();
+            highScore.text = ScoreScript.Score.ToString();
         }
-        else if (ScoreScript.Score > PlayerPrefs.GetInt("High Score2", 0)) 
+        if (ScoreScript.Score > PlayerPrefs.GetInt("High Score2", 0) && ScoreScript.Score < PlayerPrefs.GetInt("High Score", 0)) //create a runner up high score for the player
         {
             PlayerPrefs.SetInt("High Score2", ScoreScript.Score);
-            highScore.text = ScoreScript.Score.ToString();
-        }
-        else if (ScoreScript.Score > PlayerPrefs.GetInt("High Score3", 0))
-        {
-            PlayerPrefs.SetInt("High Score3", ScoreScript.Score);
-            highScore.text = ScoreScript.Score.ToString();
-        }
-        else if (ScoreScript.Score > PlayerPrefs.GetInt("High Score4", 0))
-        {
-            PlayerPrefs.SetInt("High Score4", ScoreScript.Score);
-            highScore.text = ScoreScript.Score.ToString();
-        }
-        else if (ScoreScript.Score > PlayerPrefs.GetInt("High Score5", 0))
-        {
-            PlayerPrefs.SetInt("High Score5", ScoreScript.Score);
-            highScore.text = ScoreScript.Score.ToString();
-        }
-        else if (ScoreScript.Score > PlayerPrefs.GetInt("High Score6", 0))
-        {
-            PlayerPrefs.SetInt("High Score6", ScoreScript.Score);
-            highScore.text = ScoreScript.Score.ToString();
-        }
-        else if (ScoreScript.Score > PlayerPrefs.GetInt("High Score7", 0))
-        {
-            PlayerPrefs.SetInt("High Score7", ScoreScript.Score);
-            highScore.text = ScoreScript.Score.ToString();
-        }
-        else if (ScoreScript.Score > PlayerPrefs.GetInt("High Score8", 0))
-        {
-            PlayerPrefs.SetInt("High Score8", ScoreScript.Score);
-            highScore.text = ScoreScript.Score.ToString();
-        }
-        else if (ScoreScript.Score > PlayerPrefs.GetInt("High Score9", 0))
-        {
-            PlayerPrefs.SetInt("High Score9", ScoreScript.Score);
-            highScore.text = ScoreScript.Score.ToString();
-        }
-        else if (ScoreScript.Score > PlayerPrefs.GetInt("High Score10", 0))
-        {
-            PlayerPrefs.SetInt("High Score10", ScoreScript.Score);
-            highScore.text = ScoreScript.Score.ToString();
+            highScore2.text = ScoreScript.Score.ToString();
         }
     }
 
@@ -131,6 +76,7 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         highScore.text = "0";
+        highScore2.text = "0";
     }
     void End()
     {
