@@ -7,14 +7,11 @@ public class Timer : MonoBehaviour
     float startingTime = 0f;
 
     [SerializeField] Text TimerText;
-    // Start the timer 
-    void Start()
+    void Start() // Start the timer 
     {
         currentTime = startingTime;
     }
-
-    // Update is called once per frame
-    void Update()
+    void Update() //updates and displays the timer according to real time
     {
         currentTime += Time.deltaTime;
         TimerText.text = currentTime.ToString("0.0");

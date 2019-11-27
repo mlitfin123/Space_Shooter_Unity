@@ -27,8 +27,6 @@ public class enemy_script : MonoBehaviour
         anim = GetComponent<Animator>();
         explosionSound = GetComponent<AudioSource>();
     }
-
-    //called before the first update
     void Start()
     {
         //determines if the enemy can or can't rotate
@@ -49,8 +47,6 @@ public class enemy_script : MonoBehaviour
         if (canShoot)
                 Invoke("StartShooting", Random.Range(1f, 3f));
     }
-
-    // Update is called once per frame
     void Update()
     {
         Move();
@@ -61,11 +57,11 @@ public class enemy_script : MonoBehaviour
     {
         if (canMove)
         {
-            //enemies move forward
+            //enemies move forward after spawning
             Vector3 temp = transform.position;
             temp.x -= speed * Time.deltaTime;
             transform.position = temp;
-            //remove game object
+            //remove game object after hitting the boundary
             if (temp.x < bound_X)
                 gameObject.SetActive(false);
         }

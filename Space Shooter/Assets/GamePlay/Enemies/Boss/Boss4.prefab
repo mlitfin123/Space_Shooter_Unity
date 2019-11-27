@@ -1660,7 +1660,7 @@ MonoBehaviour:
   attack_Point3: {fileID: 8569512006607567323}
   attack_Point4: {fileID: 3236982388515936239}
   attack_Point5: {fileID: 3683298158213894669}
-  boss_Bullet: {fileID: 8955392518474634343, guid: bbd712386da15894aa289fd49aceabca,
+  boss_Bullet: {fileID: 4791349937630957181, guid: 20fdd86ddd388d24eb4f2bc1b84a2181,
     type: 3}
   boss_Bullet2: {fileID: 1341495791700366429, guid: eeb9d401ed046fd44a351dfb41088e8c,
     type: 3}

@@ -7,20 +7,17 @@ public class FireBullet : MonoBehaviour
 
     [HideInInspector]
     public bool is_EnemyBullet = false;
-    // Start is called before the first frame update
     void Start()
     {
         if (is_EnemyBullet)
             speed *= -1f;
     }
-
-    // Update is called once per frame
     void Update()
     {
         Move();
     }
 
-    void Move()
+    void Move() //moves the bullet towards the player and deactivates it once it hits the boundary
     {
         Vector3 temp = transform.position;
         temp.x += speed * Time.deltaTime;
@@ -34,7 +31,7 @@ public class FireBullet : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    void OnTriggerEnter2D(Collider2D target)
+    void OnTriggerEnter2D(Collider2D target) //deactivates the bullet on contact with the player or enemy
     {
         if (target.tag == "Bullet" || target.tag == "Enemy" || target.tag == "Player")
         {

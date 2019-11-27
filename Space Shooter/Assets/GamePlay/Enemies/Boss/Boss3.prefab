@@ -179,6 +179,12 @@ PrefabInstance:
       propertyPath: canShootLaser2
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1226744866001546435, guid: 704927dc11e416c4cb61ea2a7960517f,
+        type: 3}
+      propertyPath: boss_Bullet
+      value: 
+      objectReference: {fileID: 4791349937630957181, guid: 20fdd86ddd388d24eb4f2bc1b84a2181,
+        type: 3}
     - target: {fileID: 4038553347238394846, guid: 704927dc11e416c4cb61ea2a7960517f,
         type: 3}
       propertyPath: m_IsActive

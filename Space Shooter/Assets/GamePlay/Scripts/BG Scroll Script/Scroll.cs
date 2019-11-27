@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Scroll : MonoBehaviour
 {
-    public float speed;
+    public float speed; //indicates the speed for the background to scroll
     private Renderer _renderer;
 
     private void Start()

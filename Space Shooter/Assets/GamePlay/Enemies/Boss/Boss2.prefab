@@ -169,6 +169,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1341495791700366429, guid: eeb9d401ed046fd44a351dfb41088e8c,
         type: 3}
+    - target: {fileID: 2801346889701085167, guid: 28859c4fc6c467545abdf5e15c7603ed,
+        type: 3}
+      propertyPath: boss_Bullet
+      value: 
+      objectReference: {fileID: 4791349937630957181, guid: 20fdd86ddd388d24eb4f2bc1b84a2181,
+        type: 3}
     - target: {fileID: 4665834063901768137, guid: 28859c4fc6c467545abdf5e15c7603ed,
         type: 3}
       propertyPath: m_IsActive

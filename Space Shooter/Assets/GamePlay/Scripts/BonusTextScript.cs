@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BonusTextScript : MonoBehaviour
 {
+    //starts the level with Bonus Level text and turns off the text after a specified amount of time
     public float textDelay = 1f;
-    // Start is called before the first frame update
     void Start()
     {
         Invoke("TurnOffGameObject", textDelay);

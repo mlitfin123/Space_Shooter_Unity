@@ -1,19 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
-    public float min_Y, max_Y;
+    public float speed; //indicates the speed of the player movement
+    public float min_Y, max_Y; //indicates the min and max Y value of the map
 
     [SerializeField]
-    private GameObject Player_Bullet;
+    private GameObject Player_Bullet; //determines the bullet the player will use
 
     [SerializeField]
-    private Transform attack_Point;
+    private Transform attack_Point; //sets the attack point of the player
 
-    public float attack_Timer = 0.35f;
+    public float attack_Timer = 0.35f; //determines the amount of time until the player can shoot again
     private float current_Attack_Timer;
     private bool canAttack;
 
@@ -28,22 +26,20 @@ public class PlayerMovement : MonoBehaviour
         explosionSound = GetComponent<AudioSource>();
         laserAudio = GetComponent<AudioSource>();
     }
-    // Start is called before the first frame update
     void Start()
     {
-        current_Attack_Timer = attack_Timer;
+        current_Attack_Timer = attack_Timer; //sets the attack timer upon starting the level
     }
 
-    // Update is called once per frame
     void Update()
     {
         MovePlayer();
         Attack();
     }
 
-    void MovePlayer()
+    void MovePlayer() //allows the player to move up and down along the Y axis and not past the minimum or maximum Y values
     {
-        if (Input.GetAxisRaw("Vertical") > 0f)
+        if (Input.GetAxisRaw("Vertical") > 0f) //allow the key input of the up arrow or W key
         {
             Vector3 temp = transform.position;
             temp.y += speed = Time.deltaTime * 4;
@@ -53,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
             transform.position = temp;
         }
-        else if (Input.GetAxisRaw("Vertical") < 0f)
+        else if (Input.GetAxisRaw("Vertical") < 0f)//allow the key input of the down arrow or S key
         {
             Vector3 temp = transform.position;
             temp.y -= speed = Time.deltaTime * 4;
@@ -66,19 +62,19 @@ public class PlayerMovement : MonoBehaviour
     }
     void Attack()
     {
-        attack_Timer += Time.deltaTime;
+        attack_Timer += Time.deltaTime; //allows the player to shoot once the attack timer is up
         if (attack_Timer > current_Attack_Timer)
         {
             canAttack = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //allows the player to shoot using the space bar
         {
             if (canAttack)
             {
                 canAttack = false;
                 attack_Timer = 0f;
-                Instantiate(Player_Bullet, attack_Point.position, Quaternion.Euler(0f, 0f, -90));
+                Instantiate(Player_Bullet, attack_Point.position, Quaternion.Euler(0f, 0f, -90));//moves the bullet towards the enemy
 
                 laserAudio.Play();
             }
@@ -88,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-    void OnTriggerEnter2D(Collider2D target)
+    void OnTriggerEnter2D(Collider2D target)//destroys the player and turns off the bullet on collision
     {
         if (target.tag == "Bullet" || target.tag == "Enemy")
         {

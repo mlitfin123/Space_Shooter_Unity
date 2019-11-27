@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyWildCardScript : MonoBehaviour
 {
+    //script for the enemy that does not move in a straight line towards the player
     public float speed = 5;
     private float waitTime;
     public float startWaitTime;
@@ -24,7 +23,6 @@ public class EnemyWildCardScript : MonoBehaviour
 
     public Transform[] moveSpots;
     private int randomSpot;
-    // Start is called before the first frame update
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -36,13 +34,11 @@ public class EnemyWildCardScript : MonoBehaviour
         if (canShoot)
             Invoke("StartShooting", Random.Range(1f, 3f));
     }
-
-    // Update is called once per frame
     void Update()
     {
         Move();
     }
-    void Move()
+    void Move() //indicates the enemy to move to random move spots manually placed across the map
     {
         if (canMove)
         {
@@ -60,38 +56,36 @@ public class EnemyWildCardScript : MonoBehaviour
                     waitTime -= Time.deltaTime;
                 }
             }
-            //remove game object
+            //remove game object at the boundary
             if (transform.position.x < bound_X)
                 gameObject.SetActive(false);
         }
     }
-    void StartShooting()
+    void StartShooting() //indicates the enemy can begin shooting within a random time period
     {
         GameObject bullet = Instantiate(bullet_Prefab, attack_Point.position, Quaternion.identity);
         bullet.GetComponent<FireBullet>().is_EnemyBullet = true;
 
         if (canShoot)
-            Invoke("StartShooting", Random.Range(1f, 3f));
+            Invoke("StartShooting", Random.Range(1f, 2f));
     }
     void TurnOffGameObject()
     {
         gameObject.SetActive(false);
     }
-    //determines the actions on collision
-    void OnTriggerEnter2D(Collider2D target)
+    void OnTriggerEnter2D(Collider2D target)//determines the actions on collision
     {
         if (target.tag == "Bullet" || target.tag == "Player")
         {
-            //add score
-            ScoreScript.Score += 10;
+            ScoreScript.Score += 10;//adds score if hit
             canMove = false;
-            //stop shooting
+            //stop shooting after being destroyed
             if (canShoot)
             {
                 canShoot = false;
                 CancelInvoke("StartShooting");
             }
-            //destroy enemy
+            //destroy enemy after being hit
             Invoke("TurnOffGameObject", .2f);
 
             explosionSound.Play();

@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
             restartLevel = true;
             Invoke("Restart", restartDelay); //starts the Restart function
             restartLevelText.SetActive(true); //displays the restart text
-            LivesScript.Lives -= 1; //decreases the lives on a restart
+            LivesScript.lives -= 1; //decreases the lives on a restart
         }
     }
 
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         endGameText.SetActive(true); //displays the endGame text
         restartLevelText.SetActive(false); //prevents the restartLevel text
         restartLevel = false; //prevents the level from restarting
-        LivesScript.Lives = 0;
+        LivesScript.lives = 0;
         if (ScoreScript.Score > PlayerPrefs.GetInt("High Score", 0))  //create a high score for the player
         {
             PlayerPrefs.SetInt("High Score", ScoreScript.Score);
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void Reset()
+    public void Reset() //resets the high scores
     {
         PlayerPrefs.DeleteAll();
         highScore.text = "0";
