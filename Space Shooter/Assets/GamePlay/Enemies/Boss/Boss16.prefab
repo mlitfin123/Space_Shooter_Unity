@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   startWaitTime: 1
-  moveSpot: {fileID: 0}
+  moveSpot: {fileID: 4785408251635482757}
   maxX: 12
   minX: 6
   minY: -4.5
