@@ -8,6 +8,7 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         LivesScript.lives = 3;
         ScoreScript.Score = 0;
+        GameManager.tempscore = 0;
     }
     public void QuitGame() //quits the game once the quit button is clicked
     {
