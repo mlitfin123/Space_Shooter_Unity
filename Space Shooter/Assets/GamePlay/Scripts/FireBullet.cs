@@ -7,10 +7,18 @@ public class FireBullet : MonoBehaviour
 
     [HideInInspector]
     public bool is_EnemyBullet = false;
+
+    private AudioSource laserAudio;
+
+    void Awake()
+    {
+        laserAudio = GetComponent<AudioSource>();
+    }
     void Start()
     {
         if (is_EnemyBullet)
             speed *= -1f;
+        laserAudio.Play();
     }
     void Update()
     {

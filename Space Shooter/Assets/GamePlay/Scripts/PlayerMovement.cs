@@ -15,8 +15,6 @@ public class PlayerMovement : MonoBehaviour
     private float current_Attack_Timer;
     private bool canAttack;
 
-    private AudioSource laserAudio;
-
     private Animator anim;
     private AudioSource explosionSound;
 
@@ -24,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         explosionSound = GetComponent<AudioSource>();
-        laserAudio = GetComponent<AudioSource>();
+
     }
     void Start()
     {
@@ -76,7 +74,6 @@ public class PlayerMovement : MonoBehaviour
                 attack_Timer = 0f;
                 Instantiate(Player_Bullet, attack_Point.position, Quaternion.Euler(0f, 0f, -90));//moves the bullet towards the enemy
 
-                laserAudio.Play();
             }
         }
     }
@@ -92,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 canAttack = false;
             }
-            Invoke("TurnOffGameObject", .3f);
+            Invoke("TurnOffGameObject", .5f);
             explosionSound.Play();
             anim.Play("Destroy");
             FindObjectOfType<GameManager>().RestartLevel();
