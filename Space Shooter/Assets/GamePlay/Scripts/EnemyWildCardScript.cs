@@ -77,7 +77,7 @@ public class EnemyWildCardScript : MonoBehaviour
     {
         if (target.tag == "Bullet" || target.tag == "Player")
         {
-            ScoreScript.Score += 10;//adds score if hit
+            ScoreScript.Score += 15;//adds score if hit
             canMove = false;
             //stop shooting after being destroyed
             if (canShoot)

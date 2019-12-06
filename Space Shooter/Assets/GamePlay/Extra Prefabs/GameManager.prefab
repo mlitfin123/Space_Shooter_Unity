@@ -49,6 +49,14 @@ MonoBehaviour:
   completeLevelDelay: 3
   highScore: {fileID: 0}
   highScore2: {fileID: 0}
+  highScore3: {fileID: 0}
+  highScore4: {fileID: 0}
+  highScore5: {fileID: 0}
+  highScore6: {fileID: 0}
+  highScore7: {fileID: 0}
+  highScore8: {fileID: 0}
+  highScore9: {fileID: 0}
+  highScore10: {fileID: 0}
   restartLevelText: {fileID: 0}
   completeLevelText: {fileID: 0}
   endGameText: {fileID: 0}
@@ -64,7 +72,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d897bc6570b3ff24ca04670e4688100e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     bool endGame = false;
     bool restartLevel = false;
-    bool completeLevel = false;
+    public static bool completeLevel = false;
 
     public float restartDelay = 1f;
     public float endGameDelay = 1f;
@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        completeLevel = false;
         getScores();
         if (tempscore > score1)
         {
@@ -145,7 +146,6 @@ public class GameManager : MonoBehaviour
         completeLevel = true;
         completeLevelText.SetActive(true); //displays the complete level text
         Invoke("Complete", completeLevelDelay); //starts the Complete function
-        CancelInvoke("SpawnEnemies");
     }
     void Complete()
     {

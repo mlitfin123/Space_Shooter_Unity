@@ -869,6 +869,14 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1497386601, guid: 6e668a87add7d4e4290f462ae5c6eac9, type: 3}
+      propertyPath: m_text
+      value: Congratulations!!!!! You have Destroyed the Last Mother Ship!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497386601, guid: 6e668a87add7d4e4290f462ae5c6eac9, type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e668a87add7d4e4290f462ae5c6eac9, type: 3}
 --- !u!1001 &1926809221

@@ -23,6 +23,10 @@ public class FireBullet : MonoBehaviour
     void Update()
     {
         Move();
+        if (GameManager.completeLevel == true)
+        {
+            Invoke("DeactivateGameObject", 0f);
+        }
     }
 
     void Move() //moves the bullet towards the player and deactivates it once it hits the boundary

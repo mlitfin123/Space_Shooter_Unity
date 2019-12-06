@@ -51,6 +51,11 @@ public class enemy_script : MonoBehaviour
     {
         Move();
         RotateEnemy();
+        if (GameManager.completeLevel == true)
+        {
+            Invoke("TurnOffGameObject", 0f);
+            CancelInvoke("StartShooting");
+        }
     }
 
     void Move()

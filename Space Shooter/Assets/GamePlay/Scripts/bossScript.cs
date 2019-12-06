@@ -112,12 +112,12 @@ public class bossScript : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D target)
     {
-        if (target.tag == "Bullet" || target.tag == "Enemy") //decreases the boss health after being shot
+        if (target.tag == "Bullet" || target.tag == "Boss") //decreases the boss health after being shot
             health -= 1;
         healthBar.fillAmount = health / startHealth;
         if (health <= 0)
         {
-            ScoreScript.Score += 50;//add score
+            ScoreScript.Score += 100;//add score
             canMove = false;//prevents boss from moving after death
             canShootLaser1 = false;//prevents boss from shooting laser1 after death
             canShootLaser2 = false;//prevents boss from shooting laser2 after death

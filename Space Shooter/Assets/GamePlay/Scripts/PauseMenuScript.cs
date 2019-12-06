@@ -8,7 +8,7 @@ public class PauseMenuScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) //pauses the game is Escape is pressed
+        if (Input.GetKeyDown(KeyCode.Escape)) //pauses the game if Escape is pressed
         {
             if (GameIsPaused)
             {
