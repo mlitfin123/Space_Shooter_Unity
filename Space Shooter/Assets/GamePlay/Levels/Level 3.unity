@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 6009366284201137179, guid: 142fba171c55eeb45aeb15a72d8976b0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.5
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6009366284201137179, guid: 142fba171c55eeb45aeb15a72d8976b0,
         type: 3}
@@ -548,7 +548,7 @@ PrefabInstance:
     - target: {fileID: 844819762606884916, guid: bd8975aa5eeeeab4a9c9d0c31b9afafa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 844819762606884916, guid: bd8975aa5eeeeab4a9c9d0c31b9afafa,
         type: 3}
@@ -1150,6 +1150,30 @@ PrefabInstance:
     - target: {fileID: 7661781898203183871, guid: 6e668a87add7d4e4290f462ae5c6eac9,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 872861071, guid: 6e668a87add7d4e4290f462ae5c6eac9, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 872861071, guid: 6e668a87add7d4e4290f462ae5c6eac9, type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442033278, guid: 6e668a87add7d4e4290f462ae5c6eac9, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442033278, guid: 6e668a87add7d4e4290f462ae5c6eac9, type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497386601, guid: 6e668a87add7d4e4290f462ae5c6eac9, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880890895, guid: 6e668a87add7d4e4290f462ae5c6eac9, type: 3}
+      propertyPath: m_enableVertexGradient
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

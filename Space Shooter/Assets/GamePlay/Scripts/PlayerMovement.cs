@@ -73,7 +73,6 @@ public class PlayerMovement : MonoBehaviour
                 canAttack = false;
                 attack_Timer = 0f;
                 Instantiate(Player_Bullet, attack_Point.position, Quaternion.Euler(0f, 0f, -90));//moves the bullet towards the enemy
-
             }
         }
     }

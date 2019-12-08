@@ -47,16 +47,26 @@ MonoBehaviour:
   restartDelay: 3
   endGameDelay: 3
   completeLevelDelay: 3
-  highScore: {fileID: 0}
-  highScore2: {fileID: 0}
-  highScore3: {fileID: 0}
-  highScore4: {fileID: 0}
-  highScore5: {fileID: 0}
-  highScore6: {fileID: 0}
-  highScore7: {fileID: 0}
-  highScore8: {fileID: 0}
-  highScore9: {fileID: 0}
-  highScore10: {fileID: 0}
+  highScore: {fileID: 4909615945351028461, guid: dfc9906896a51554eb16ca87762e757d,
+    type: 3}
+  highScore2: {fileID: 4909615945351028461, guid: dfc9906896a51554eb16ca87762e757d,
+    type: 3}
+  highScore3: {fileID: 4909615945351028461, guid: dfc9906896a51554eb16ca87762e757d,
+    type: 3}
+  highScore4: {fileID: 4909615945351028461, guid: dfc9906896a51554eb16ca87762e757d,
+    type: 3}
+  highScore5: {fileID: 4909615945351028461, guid: dfc9906896a51554eb16ca87762e757d,
+    type: 3}
+  highScore6: {fileID: 4909615945351028461, guid: dfc9906896a51554eb16ca87762e757d,
+    type: 3}
+  highScore7: {fileID: 4909615945351028461, guid: dfc9906896a51554eb16ca87762e757d,
+    type: 3}
+  highScore8: {fileID: 4909615945351028461, guid: dfc9906896a51554eb16ca87762e757d,
+    type: 3}
+  highScore9: {fileID: 4909615945351028461, guid: dfc9906896a51554eb16ca87762e757d,
+    type: 3}
+  highScore10: {fileID: 4909615945351028461, guid: dfc9906896a51554eb16ca87762e757d,
+    type: 3}
   restartLevelText: {fileID: 0}
   completeLevelText: {fileID: 0}
   endGameText: {fileID: 0}

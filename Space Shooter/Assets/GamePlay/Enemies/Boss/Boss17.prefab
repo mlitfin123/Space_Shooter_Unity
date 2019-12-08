@@ -196,8 +196,8 @@ MonoBehaviour:
   speed: 1
   startWaitTime: 1
   moveSpot: {fileID: 1248478343520366012}
-  maxX: 12
-  minX: 6
+  maxX: 9
+  minX: 5
   minY: 4.5
   maxY: -4.5
   startHealth: 18

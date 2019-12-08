@@ -190,8 +190,8 @@ MonoBehaviour:
   startWaitTime: 1
   moveSpot: {fileID: 4735271028767982791, guid: debc9e7a2a487b04cbd65807832bc709,
     type: 3}
-  maxX: 12
-  minX: 6
+  maxX: 9
+  minX: 5
   minY: -4.5
   maxY: 4.5
   startHealth: 12
